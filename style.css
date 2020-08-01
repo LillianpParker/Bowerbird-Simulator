@@ -27,21 +27,11 @@ h1{
 #Middle-Container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
-
-#Right-Container{
-    display: flex;
-    justify-content: center;
-} 
-
-.Right-Bowerbird{
-    height: 500px;
-    width: 400px;
-}
-/* Buttons Below */
 
 .Begin-Intro {
+    font-family: 'Cabin Sketch', cursive;
 	box-shadow:inset 0px 0px 0px 0px #e184f3;
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
 	background-color:#c123de;
@@ -49,8 +39,7 @@ h1{
 	border:1px solid #a511c0;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
+	color:black;
 	font-size:26px;
 	font-weight:bold;
 	padding:32px 11px;
@@ -67,6 +56,7 @@ h1{
 }
 
 .Bowerbird-Info {
+    font-family: 'Cabin Sketch', cursive;
 	box-shadow:inset 0px 0px 0px 0px #e184f3;
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
 	background-color:#c123de;
@@ -74,8 +64,7 @@ h1{
 	border:1px solid #a511c0;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
+	color:black;
 	font-size:26px;
 	font-weight:bold;
 	padding:32px 11px;
@@ -90,3 +79,16 @@ h1{
 	position:relative;
 	top:1px;
 }
+
+#Right-Container{
+    display: flex;
+    justify-content: center;
+} 
+
+.Right-Bowerbird{
+    height: 500px;
+    width: 400px;
+}
+
+
+
