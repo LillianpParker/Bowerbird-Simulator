@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://www.nationalparks.nsw.gov.au/-/media/npws/images/visit-a-park/toonumbar-national-park/toonumbar-biodiversity-01.jpg?h=450&w=767&la=en&hash=F7388D3168EA250569A65CAA2F798FC1F017E8BE");
+    background-size: cover;
+}
+
+h1{
+    background-color: brown;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+#Main-Container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Left-Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Left-Bowerbird{
+    height: 500px;
+    width: 400px;
+}
+
+#Middle-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Right-Container{
+    display: flex;
+    justify-content: center;
+} 
+
+.Right-Bowerbird{
+    height: 500px;
+    width: 400px;
+}
+
+/* Bird Animation Below */
+
+.bird {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg');
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+  }
+    @keyframes fly-cycle {
+    100% {
+    background-position: -900px 0;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+    } 
+  }
+
+  .bird---one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+  }
+
+  .bird---two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+  }
+  
