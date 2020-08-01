@@ -1,10 +1,9 @@
 body{
-    background-image: url("https://www.nationalparks.nsw.gov.au/-/media/npws/images/visit-a-park/toonumbar-national-park/toonumbar-biodiversity-01.jpg?h=450&w=767&la=en&hash=F7388D3168EA250569A65CAA2F798FC1F017E8BE");
-    background-size: cover;
+    background-image: url("https://big4-kentico-image-files-big4holidayparks.netdna-ssl.com/getmedia/8efcdde4-ec69-47a2-9ae1-b3f7692d43ef/Rainforest__QLD.jpg");
 }
 
 h1{
-    background-color: brown;
+    background-color: purple;
     text-align: center;
     font-size: 40px;
     font-family: 'Cabin Sketch', cursive;
@@ -40,34 +39,54 @@ h1{
     height: 500px;
     width: 400px;
 }
+/* Buttons Below */
 
-/* Bird Animation Below */
+.Begin-Intro {
+	box-shadow:inset 0px 0px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:26px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:26px;
+	font-weight:bold;
+	padding:32px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.Begin-Intro:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.Begin-Intro:active {
+	position:relative;
+	top:1px;
+}
 
-.bird {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg');
-    background-size: auto 100%;
-    width: 88px;
-    height: 125px;
-    will-change: background-position;
-  }
-    @keyframes fly-cycle {
-    100% {
-    background-position: -900px 0;
-    animation-name: fly-cycle;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-delay: -0.5s;
-    } 
-  }
-
-  .bird---one {
-    animation-duration: 1s;
-    animation-delay: -0.5s;
-  }
-
-  .bird---two {
-    animation-duration: 0.9s;
-    animation-delay: -0.75s;
-  }
-  
+.Bowerbird-Info {
+	box-shadow:inset 0px 0px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:26px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:26px;
+	font-weight:bold;
+	padding:32px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.Bowerbird-Info:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.Bowerbird-Info:active {
+	position:relative;
+	top:1px;
+}
