@@ -1,8 +1,3 @@
-// Jquery Below
-$(() => {
-})
-
-// Javascript Below
 
 let items = [
     {name: "twig",value: 1},
@@ -14,9 +9,27 @@ let items = [
     {name: "Blue Straw", value: 20}
     ]
 
-function presentItems (items) {
+function getRandomSubset (list, numChoices) {
     let pickedItems = []
-    items = items[Math.floor(Math.random() *7)-1];
-        items.push(pickedItems)
-    console.log(pickedItems)
+    let currentItems = list.slice()
+    for ( let i=0; i < numChoices; i++){
+        let index = Math.floor(Math.random()*currentItems.length)
+        let item = currentItems[index]
+        currentItems.splice(index, 1)
+        pickedItems.push(item)
+    }
+    return pickedItems
 }
+
+function search (e){
+    console.log(getRandomSubset(items, 3))
+    $(() => {
+        let choices = (getRandomSubset(items, 3))
+        for (let i = 0; i < choices.length ; i++){
+        let buttonChoice = $('<button>')
+        buttonChoice.text(choices[i].name + ": " + " " + choices[i].value)
+        buttonChoice.appendTo($('#choices'))
+        }
+    })
+}
+
