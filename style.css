@@ -1,16 +1,36 @@
 body{
-	background-image: url("https://s3.thingpic.com/images/ng/nqZKBrP2VYdnwoGseCNjwnhy.jpeg");
-	background-size: cover;
+	/* background-image: url("https://i.pinimg.com/originals/a0/99/c7/a099c72d34108b38075134b1378750c6.jpg");
+	background-size: cover; */
+	background-color: skyblue;
 }
 
+#Bower{
+	display: block;
+	height: 400px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Title{
+    font-family: "Cabin Sketch", cursive;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgba(0, 128, 153, 0.75) 0px 0px 0px, rgba(2, 118, 147, 0.74) 0px 1.3px 0px, rgba(3, 108, 141, 0.73) 0px 2.6px 0px, rgba(4, 99, 135, 0.72) 0px 3.9px 0px, rgba(6, 91, 129, 0.71) 0px 5.2px 0px, rgba(7, 84, 124, 0.7) 0px 6.5px 0px, rgba(8, 76, 118, 0.69) 0px 7.8px 0px, rgba(9, 70, 112, 0.67) 0px 9.1px 0px, rgba(10, 63, 107, 0.66) 0px 10.4px 0px, rgba(11, 58, 102, 0.65) 0px 11.7px 0px, rgba(11, 52, 96, 0.64) 0px 13px 0px, rgba(12, 47, 91, 0.63) 0px 14.3px 0px, rgba(12, 43, 86, 0.62) 0px 15.6px 0px, rgba(13, 39, 81, 0.61) 0px 16.9px 0px, rgba(13, 35, 76, 0.6) 0px 18.1px 0px, rgba(13, 31, 72, 0.59) 0px 19.4px 0px, rgba(14, 28, 67, 0.58) 0px 20.7px 0px, rgba(14, 25, 62, 0.57) 0px 22px 0px, rgba(14, 22, 58, 0.56) 0px 23.3px 0px, rgba(13, 20, 53, 0.55) 0px 24.6px 0px, rgba(13, 18, 49, 0.54) 0px 25.9px 0px, rgba(13, 16, 45, 0.52) 0px 27.2px 0px, rgba(12, 14, 41, 0.51) 0px 28.5px 0px, rgba(12, 12, 37, 0.5) 0px 29.8px 0px, rgba(12, 11, 33, 0.49) 0px 31.1px 0px, rgba(11, 11, 29, 0.48) 0px 32.4px 0px, rgba(11, 10, 26, 0.47) 0px 33.7px 0px, rgba(10, 9, 22, 0.46) 0px 35px 0px;
+}
 h1{
-    background-color: purple;
+    text-align: center;
+    font-size: 70px;
+	font-family: 'Cabin Sketch', cursive;
+
+}
+h2{
     text-align: center;
     font-size: 40px;
-    font-family: 'Cabin Sketch', cursive;
+	font-family: 'Cabin Sketch', cursive;
 }
 
-#Main-Container{
+/* #Main-Container{
     display: flex;
     justify-content: space-around;
 }
@@ -23,12 +43,11 @@ h1{
 .Left-Bowerbird{
     height: 500px;
     width: 400px;
-}
+} */
 
 #Middle-Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	height: 100px;
+    width: 200px;
 }
 
 .Begin-Intro {
@@ -38,7 +57,6 @@ h1{
 	background-color:#c123de;
 	border-radius:26px;
 	border:1px solid #a511c0;
-	display:inline-block;
 	cursor:pointer;
 	color:black;
 	font-size:26px;
@@ -46,6 +64,7 @@ h1{
 	padding:32px 11px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #9b14b3;
+	
 }
 .Begin-Intro:hover {
 	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
@@ -63,7 +82,6 @@ h1{
 	background-color:#c123de;
 	border-radius:26px;
 	border:1px solid #a511c0;
-	display:inline-block;
 	cursor:pointer;
 	color:black;
 	font-size:26px;
@@ -92,4 +110,141 @@ h1{
 }
 
 
+/* <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+</div> */
 
+
+/* Extensive bird animation below */
+
+.container {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 35rem;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+  }
+  
+  .bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+  }
+  .bird--one {
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+  }
+  .bird--two {
+	animation-duration: 0.9s;
+	animation-delay: -0.75s;
+  }
+  .bird--three {
+	animation-duration: 1.25s;
+	animation-delay: -0.25s;
+  }
+  .bird--four {
+	animation-duration: 1.1s;
+	animation-delay: -0.5s;
+  }
+  
+  .bird-container {
+	position: absolute;
+	bottom: 10%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+  }
+  .bird-container--one {
+	animation-duration: 15s;
+	animation-delay: 0;
+  }
+  .bird-container--two {
+	animation-duration: 16s;
+	animation-delay: 1s;
+  }
+  .bird-container--three {
+	animation-duration: 14.6s;
+	animation-delay: 9.5s;
+  }
+  .bird-container--four {
+	animation-duration: 16s;
+	animation-delay: 10.25s;
+  }
+  
+  @keyframes fly-cycle {
+	100% {
+	  background-position: -900px 0;
+	}
+  }
+  @keyframes fly-right-one {
+	0% {
+	  transform: scale(0.3) translateX(-10vw);
+	}
+	10% {
+	  transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+	  transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	30% {
+	  transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	40% {
+	  transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	50% {
+	  transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	60% {
+	  transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	100% {
+	  transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+  }
+  @keyframes fly-right-two {
+	0% {
+	  transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	10% {
+	  transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+	  transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	30% {
+	  transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	40% {
+	  transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	50% {
+	  transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+	51% {
+	  transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	100% {
+	  transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+  }
+
+  #Signature{
+	  width: 30px;
+	  height: 30px;
+  }

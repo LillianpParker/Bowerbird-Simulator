@@ -2,7 +2,82 @@ body{
     background-color: slategray;
 }
 
-.Begin-the-Bower{
+/* #Introduction {
+    margin: 90px auto;
+    background-color: #ff5a5a;
+    width: 100px;
+    height: 200px;
+    position: relative;
+  } */
+
+#Kami {
+    max-width: 50%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    position: relative;
+}
+
+
+
+#Speech {
+    position: absolute;
+    transform-origin: 0% 100%;
+    text-align: center;
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+    left: 110px;
+    top: -75px;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+  }
+  /* We need to add a tail to the speech bubble. This is done using
+  the ::before pseudo-element. The tail's size is controlled by 
+  its borders. The right and bottom borders are given a transparent
+  color so that the tail still retains its shape while giving the
+  desired look */
+  #Speech::before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #5a5a5a transparent transparent #5a5a5a;
+    transform: rotate(10deg);
+  }
+  
+  /* Here the scale changes from 0 to 1. To add the bounciness 
+  effect, the scale is set to 1.25 midway through the animation
+  to give the animation a nicer effect. */
+  @keyframes expand-bounce {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Here the scale simply goes from 1 back to 0 */
+  @keyframes shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  .Begin-the-Bower{
     background: #000000;
     background: linear-gradient(#000000, #073763);
     border-radius: 13px;
