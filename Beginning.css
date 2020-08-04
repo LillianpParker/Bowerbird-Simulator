@@ -2,43 +2,38 @@ body{
     background-color: slategray;
 }
 
-#Introduction {
-    margin: 90px auto;
-    background-color: #ff5a5a;
-    width: 100px;
-    height: 200px;
-    position: relative;
-  }
-
-#Kami {
-    max-width: 50%;
-    height: auto;
-    left: 0px;
-    right: 0px;
-    position: relative;
+h1{
+  font-family: 'Cabin Sketch', cursive;
 }
 
+p{
+  font-family: 'Indie Flower', cursive;
+}
 
+/* Speech Bubble Animation Below */
+ #Kami {
+   position: relative;
+    max-width: 40%;
+    height: auto;
+    left: 250px;
+    padding: 0px;
+} 
 
-#Speech {
+ #Speech {
     position: absolute;
     transform-origin: 0% 100%;
     text-align: center;
     background-color: #5a5a5a;
     color: white;
     border-radius: 10px;
-    width: 120px;
+    width: 200px;
     padding: 10px;
-    left: 110px;
-    top: -75px;
+    left: 730px;
+    top: 20px;
     transform: scale(0);
     animation-fill-mode: forwards;
-  }
-  /* We need to add a tail to the speech bubble. This is done using
-  the ::before pseudo-element. The tail's size is controlled by 
-  its borders. The right and bottom borders are given a transparent
-  color so that the tail still retains its shape while giving the
-  desired look */
+  } 
+ 
   #Speech::before {
     content: "";
     display: block;
@@ -50,12 +45,10 @@ body{
     border-width: 15px;
     border-color: #5a5a5a transparent transparent #5a5a5a;
     transform: rotate(10deg);
-  }
+  } 
   
-  /* Here the scale changes from 0 to 1. To add the bounciness 
-  effect, the scale is set to 1.25 midway through the animation
-  to give the animation a nicer effect. */
-  @keyframes expand-bounce {
+ 
+   @keyframes expand-bounce {
     0% {
       transform: scale(0);
     }
@@ -65,17 +58,45 @@ body{
     100% {
       transform: scale(1);
     }
-  }
-  
-  /* Here the scale simply goes from 1 back to 0 */
-  @keyframes shrink {
+  } 
+
+   @keyframes shrink {
     0% {
       transform: scale(1);
     }
     100% {
       transform: scale(0);
     }
-  }
+  } 
+
+#flex-container-1{
+  display:flex;
+}
+
+#One{
+  flex-direction: row;
+  font-size: 30px;
+}
+
+#Two{
+  position: relative;
+  left: 700px;
+  font-size: 30px;
+  width: 700px;
+}
+
+
+#Three{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  width: 700px;
+}
+
+#button-container{
+  display: flex;
+  justify-content: space-around;
+}
 
   .Begin-the-Bower{
     background: #000000;

@@ -1,31 +1,49 @@
-// $(() => {
+
+
+
+
+
 // Directions Screen Animations
+$(() => {
 
-const Introduction = $("#Introduction");
-const Speech = $("#Speech");
-
-// The the user hovers the mouse over
-// the rectangle the "expand-bounce"
-// animation is called and the duration
-// is set to 250 miliseconds.
-// When the user moves the mouse away
-// the "shrink" animation gets called
-// and the duration is set to 100
-// miliseconds.
-Introduction.hover(
-    function () {
-        Speech.css({
-            "animation-name": "expand-bounce",
-            "animation-duration": "0.25s"
-        });
-    },
-    function () {
-        Speech.css({
-            "animation-name": "shrink",
-            "animation-duration": "0.1s"
-        });
-    }
+let Kami = $("#Kami");
+let Speech = $("#Speech");
+Kami.hover(
+  function() {
+    Speech.css({
+      "animation-name": "expand-bounce",
+      "animation-duration": "0.25s"
+    });
+  },
+  function() {
+    Speech.css({
+      "animation-name": "shrink",
+      "animation-duration": "0.1s"
+    });
+  }
 );
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Item Array
 
@@ -128,4 +146,4 @@ function losingScreen() {
     givingUp.appendTo(losingTitle)
 }
 
-// })
+
