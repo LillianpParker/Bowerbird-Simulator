@@ -6,7 +6,7 @@ body{
 	position: relative;
 	height: 400px;
 	width: 400px;
-	left: 500px;
+	left: 35%;
 }
 #BowerPic{
 	position: absolute;
@@ -42,12 +42,11 @@ h2{
 	background-color:transparent;
 	border-radius:26px;
 	cursor:pointer;
-	color: #C0A982;
+	color: black;
 	font-size:26px;
 	font-weight:bold;
 	padding:12px 11px;
 	text-decoration:none;
-	text-shadow: 0 0 2px black;
 	height: 50px;
 }
 .Begin-Intro:hover {
@@ -63,12 +62,11 @@ h2{
 	background-color:transparent;
 	border-radius:26px;
 	cursor:pointer;
-	color: #C0A982;
+	color: black;
 	font-size:26px;
 	font-weight:bold;
 	padding:12px 11px;
 	text-decoration:none;
-	text-shadow: 0 0 2px black;
 	height: 50px;
 }
 .Bowerbird-Info:hover {
