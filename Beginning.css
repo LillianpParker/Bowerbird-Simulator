@@ -81,6 +81,7 @@ p{
   flex-direction: row;
   width: 700px;
   font-size: 50px;
+  left: 50%;
 }
 
 /* I know I shouldn't use float, but I spent over two hours to get flexbox and other positioning methods to work until I gave up and finaly tried float. Same goes for the other time I used it. */
@@ -95,7 +96,7 @@ p{
 }
 
 #Two{
-  left: 900px; 
+  left: 50%;
   font-size: 30px;
   width: 800px;
 }
@@ -112,9 +113,8 @@ p{
 
 #Three{
   font-size: 30px;
-  padding-right: 200px; 
   width: 1000px;
-  right: 200px;
+  right: 50%
 }
 
 #button-container{
