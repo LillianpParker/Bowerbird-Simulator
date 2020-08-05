@@ -14,8 +14,7 @@ p{
 
 /* Speech Bubble Animation Below */
  #Kami {
-   position: absolute;
-   left: 825px;
+    float: right;
     padding: 0px 0px 0px 0px;
     width: 600px;
     height: 400px;
