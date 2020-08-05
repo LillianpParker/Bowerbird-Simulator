@@ -123,16 +123,15 @@ p{
 }
 
 .Begin-the-Bower {
-font-family: 'Cabin Sketch', cursive;
+font-family: 'Indie Flower', cursive;
 background-color:transparent;
 border-radius:26px;
 cursor:pointer;
-color: #C0A982;
+color: black;
 font-size:26px;
 font-weight:bold;
 padding:12px 11px;
 text-decoration:none;
-text-shadow: 0 0 2px black;
 height: 50px;
 }
 .Begin-the-Bower:hover {
@@ -144,16 +143,15 @@ top:1px;
 }
 
 .Exit{
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Indie Flower', cursive;
   background-color:transparent;
   border-radius:26px;
   cursor:pointer;
-  color: #C0A982;
+  color: black;
   font-size:26px;
   font-weight:bold;
   padding:12px 11px;
   text-decoration:none;
-  text-shadow: 0 0 2px black;
   height: 50px;
 }
 .Exit:hover{

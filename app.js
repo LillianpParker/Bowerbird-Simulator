@@ -131,7 +131,7 @@ function winningScreen() {
         })
     let givingUp = $('<a>')
     givingUp.addClass("Loser")
-    givingUp.text("I'll wait till next seson")
+    givingUp.text("I'll wait till next season")
     givingUp.appendTo($('#button-container'))
     givingUp.click(
         () => {
@@ -154,7 +154,7 @@ function losingScreen() {
         })
     let givingUp = $('<a>')
     givingUp.addClass("Loser")
-    givingUp.text("I'll wait till next seson")
+    givingUp.text("I'll wait till next season")
     givingUp.appendTo($('#button-container'))
     givingUp.click(
         () => {

@@ -33,53 +33,50 @@ h2{
 #Search{
     position: relative;
     top: -50px; 
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Indie Flower', cursive;
     background-color:transparent;
     border-radius:26px;
     cursor:pointer;
-    color: #C0A982;
+    color: black;
     font-size:26px;
     font-weight:bold;
     padding:12px 11px;
     text-decoration:none;
-    text-shadow: 0 0 2px black;
     height: 50px;
 }
-.Search:hover{
+#Search:hover {
 background-color:#68b8d9;
 }
-.Search:active{
+#Search:active {
 position:relative;
-top:1px;
 }
 
 #Check-Opponent{
     position: relative;
      top: 10px; 
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Indie Flower', cursive;
     background-color:transparent;
     border-radius:26px;
     cursor:pointer;
-    color: #C0A982;
+    color: black;
     font-size:26px;
     font-weight:bold;
     padding:12px 11px;
     text-decoration:none;
-    text-shadow: 0 0 2px black;
     height: 50px;
 }
-.Check-Opponent:hover{
+#Check-Opponent:hover{
     background-color:#68b8d9;
 }
-.Check-Opponent:active{
+#Check-Opponent:active{
     position:relative;
     top:1px;
 }
 
 #button-container{
-    display: flex;
-    justify-content: space-around;
-  }
+  display: flex;
+  justify-content: space-around;
+}
 
 .Winner{
         position: relative;
