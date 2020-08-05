@@ -1,3 +1,39 @@
+
+@media (min-width:1450) { 
+  #Kami {
+    position: absolute;
+     left: 70%;
+     padding: 0px 0px 0px 0px;
+     width: 600px;
+     height: 400px;
+  }
+  #Speech {
+    position: absolute;
+    transform-origin: 0% 100%;
+    text-align: center;
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    left: 65%;
+    top: 60px;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+  } 
+  #Two{
+    left: 15%;
+    font-size: 30px;
+    width: 50%;
+    position: relative;
+  }
+  
+ } 
+
+
+    
+
+
 /* To Instructors: I had to use floats even though I know I shouldnt. I spent hours trying to not use it and going through every method I could find. I just eventually had to call it quits and use it. */
 
 body{
@@ -17,9 +53,9 @@ p{
 /* Speech Bubble Animation Below */
  #Kami {
    position: absolute;
-    left: 825px;
-    padding: 0px 0px 0px 0px;
-    width: 600px;
+    left: 60%;
+    padding: 0px;
+    width: 550px;
     height: 400px;
 } 
 
@@ -32,7 +68,7 @@ p{
     border-radius: 10px;
     width: 200px;
     padding: 10px;
-    left: 760px;
+    left: 55%;
     top: 60px;
     transform: scale(0);
     animation-fill-mode: forwards;
@@ -95,7 +131,8 @@ p{
 }
 
 #Two{
-  left: 50%;
+  position: relative; 
+  left: 5%;
   font-size: 30px;
   width: 50%;
 }
