@@ -25,16 +25,16 @@ Kami.hover(
 // Item Array
 
 let items = [
-    { name: "Twig", value: 1 },
+    { name: "Twig", value: 1},
     { name: "Leaf", value: 2 },
-    { name: "Feather", value: 4 },
-    { name: "Flower Petal", value: 5, },
-    { name: "Colorful Leaf", value: 7 },
-    { name: "Whole Flower", value: 10 },
-    { name: "Coin", value: 14 },
-    { name: "Colored Plastic Bottle Cap", value: 15 },
-    { name: "Berries", value: 17 },
-    { name: "Colored Straw", value: 20 }
+    { name: "Feather", value: 4},
+    { name: "Flower Petal", value: 5},
+    { name: "Colorful Leaf", value: 7},
+    { name: "Whole Flower", value: 10},
+    { name: "Coin", value: 14},
+    { name: "Colored Plastic Bottle Cap", value: 15},
+    { name: "Berries", value: 17},
+    { name: "Colored Straw", value: 20}
 ]
 
 // Player Below
@@ -57,6 +57,8 @@ let round = 1
 let totalRounds = 10
 
 function playerSearch(e) {
+    // $('#Win').hide()
+    // $('#Lose').hide()
     $('#Search').hide()
     round = round + 1
     let roundNumber = $('#round')
@@ -83,7 +85,7 @@ function playerSearch(e) {
         })
     
     }
-    if (points > compPoints && round >= totalRounds) {
+    if (points > compPoints && round >= totalRounds) {  
         winningScreen()
     }
     if (points < compPoints && round >= totalRounds) {
@@ -114,28 +116,30 @@ function checkComputerScore() {
         let checkedScore = $('<h1>')
         checkedScore.text("Your Rivals Bower Score is " + compPoints)
         checkedScore.appendTo('#round')
+        $('#Check-Opponent').hide()
     }
 }
 
 function winningScreen() {
     $('#removeForEnd').empty()
     let winningTitle = $('<h1>')
-    winningTitle.text("Congratulations, your Bower has ranked in first! You've won her attention with a most stunning and colorful bower, and beat your competitor with a final rating of "+ playerSearch().points)
+    winningTitle.text("Congratulations, your Bower has ranked in first! You've won her attention with a most stunning and colorful bower, and beat your competitor with a final rating of "+ points)
     winningTitle.appendTo('body')
-    winningTitle.append("<img id='bowerImage' src='https://blogs.zeiss.com/sports-optics/birding/en/wp-content/uploads/sites/2/2018/05/Laubenvogel_Nestbau.jpg'/>");
 }
 
 function losingScreen() {
     $('#removeForEnd').empty()
     let losingTitle = $('<h1>')
     losingTitle.text("It would appear your competitors bower looked better than yours. But good news is, you can try with another lady if you'd like, or, if you're so heartbroken, you can wait until next season. What do ya say?")
-    // losingTitle.appendTo('#removeForEnd')
-    // let tryAgain = $('<button>')
-    // tryAgain.text("Try Again")
-    // tryAgain.appendTo(losingTitle)
-    // let givingUp = $('<button>')
-    // givingUp.text("I'll wait till next seson")
-    // givingUp.appendTo(losingTitle)
+    losingTitle.appendTo('#removeForEnd')
+    let tryAgain = $('<button>')
+    tryAgain.text("Try Again")
+    tryAgain.appendTo(losingTitle)
+    tryAgain.click(window.location="Gameplay.html")
+    let givingUp = $('<button>')
+    givingUp.text("I'll wait till next seson")
+    givingUp.appendTo(losingTitle)
+    tryAgain.click(window.location="index.html")
 }
 
 
