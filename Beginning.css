@@ -33,7 +33,7 @@ p{
     width: 200px;
     padding: 10px;
     left: 760px;
-    top: 20px;
+    top: 60px;
     transform: scale(0);
     animation-fill-mode: forwards;
   } 

@@ -2,22 +2,22 @@
 // Directions Screen Animations
 $(() => {
 
-let Kami = $("#Kami");
-let Speech = $("#Speech");
-Kami.hover(
-  function() {
-    Speech.css({
-      "animation-name": "expand-bounce",
-      "animation-duration": "0.25s"
-    });
-  },
-  function() {
-    Speech.css({
-      "animation-name": "shrink",
-      "animation-duration": "0.1s"
-    });
-  }
-);
+    let Kami = $("#Kami");
+    let Speech = $("#Speech");
+    Kami.hover(
+        function () {
+            Speech.css({
+                "animation-name": "expand-bounce",
+                "animation-duration": "0.25s"
+            });
+        },
+        function () {
+            Speech.css({
+                "animation-name": "shrink",
+                "animation-duration": "0.1s"
+            });
+        }
+    );
 
 })
 
@@ -25,16 +25,16 @@ Kami.hover(
 // Item Array
 
 let items = [
-    { name: "Twig", value: 1, color: "#a6885e"},
+    { name: "Twig", value: 1, color: "#a6885e" },
     { name: "Leaf", value: 2, color: "#598F71" },
-    { name: "Feather", value: 4, color: "#D1D2DC"},
-    { name: "Flower Petal", value: 5, color: "#FFB6CI"},
-    { name: "Colorful Leaf", value: 7, color: "#8A3D36"},
-    { name: "Whole Flower", value: 10, color: "#DA70D6"},
-    { name: "Coin", value: 14, color: "#FFD700"},
-    { name: "Colored Plastic Bottle Cap", value: 15, color: "#00BFFF"},
-    { name: "Berries", value: 17, color:"#9B4466"},
-    { name: "Colored Straw", value: 20, color: "#7FFFD4"}
+    { name: "Feather", value: 4, color: "#D1D2DC" },
+    { name: "Flower Petal", value: 5, color: "#FFB6CI" },
+    { name: "Colorful Leaf", value: 7, color: "#8A3D36" },
+    { name: "Whole Flower", value: 10, color: "#DA70D6" },
+    { name: "Coin", value: 14, color: "#FFD700" },
+    { name: "Colored Plastic Bottle Cap", value: 15, color: "#00BFFF" },
+    { name: "Berries", value: 17, color: "#9B4466" },
+    { name: "Colored Straw", value: 20, color: "#7FFFD4" }
 ]
 
 // Player Below
@@ -57,8 +57,6 @@ let round = 1
 let totalRounds = 10
 
 function playerSearch(e) {
-    // $('#Win').hide()
-    // $('#Lose').hide()
     $('#Search').hide()
     round = round + 1
     let roundNumber = $('#round')
@@ -71,7 +69,7 @@ function playerSearch(e) {
         buttonChoice.css('background-color', choices[i].color)
         buttonChoice.appendTo($('#choices'))
         buttonChoice.click(() => {
-        $('#Search').show()
+            $('#Search').show()
             // Player Points
             points = points + choices[i].value
             let scoreCard = $('#scoreValue')
@@ -84,9 +82,9 @@ function playerSearch(e) {
             compScoreCard.appendTo('#compScoreValue')
             console.log(compPoints)
         })
-    
+
     }
-    if (points > compPoints && round >= totalRounds) {  
+    if (points > compPoints && round >= totalRounds) {
         winningScreen()
     }
     if (points < compPoints && round >= totalRounds) {
@@ -108,7 +106,7 @@ function computerSearch(e) {
 }
 
 function checkComputerScore() {
-    if ( round >= 8){
+    if (round >= 8) {
         alert("Sorry, too late for that pal!")
         $('#Check-Opponent').hide()
     }
@@ -124,8 +122,15 @@ function checkComputerScore() {
 function winningScreen() {
     $('#removeForEnd').empty()
     let winningTitle = $('<h1>')
-    winningTitle.text("Congratulations, your Bower has ranked in first! You've won her attention with a most stunning and colorful bower, and beat your competitor with a final rating of "+ points)
-    winningTitle.appendTo('body')
+    winningTitle.text("Congratulations, your Bower has ranked in first! You've won her attention with a most stunning and colorful bower, and beat your competitor with a final rating of " + points + "! Most don't even get this far so give yourself a wing on the back! So, whats the plan? Want to try again with another fair lady, or call it quits for the season?")
+    let tryAgain = $('<button>')
+    tryAgain.text("Try Again")
+    tryAgain.appendTo(winningTitle)
+    tryAgain.click(window.location = "Gameplay.html")
+    let givingUp = $('<button>')
+    givingUp.text("I'll wait till next seson")
+    givingUp.appendTo(winningTitle)
+    tryAgain.click(window.location = "index.html")
 }
 
 function losingScreen() {
@@ -136,11 +141,11 @@ function losingScreen() {
     let tryAgain = $('<button>')
     tryAgain.text("Try Again")
     tryAgain.appendTo(losingTitle)
-    tryAgain.click(window.location="Gameplay.html")
+    tryAgain.click(window.location = "Gameplay.html")
     let givingUp = $('<button>')
     givingUp.text("I'll wait till next seson")
     givingUp.appendTo(losingTitle)
-    tryAgain.click(window.location="index.html")
+    tryAgain.click(window.location = "index.html")
 }
 
 
