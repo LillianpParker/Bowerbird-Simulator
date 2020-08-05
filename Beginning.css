@@ -1,3 +1,5 @@
+/* To Instructors: I had to use floats even though I know I shouldnt. I spent hours trying to not use it and going through every method I could find. I just eventually had to call it quits and use it. */
+
 body{
     background-color: skyblue;
 }
@@ -75,10 +77,9 @@ p{
 }
 
 #One{
-  flex-direction: row;
   width: 50%;
   font-size: 50px;
-  float: left
+  left: 50%
 }
 
 /* I know I shouldn't use float, but I spent over two hours to get flexbox and other positioning methods to work until I gave up and finaly tried float. Same goes for the other time I used it. */

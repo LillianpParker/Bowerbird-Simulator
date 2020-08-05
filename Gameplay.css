@@ -81,16 +81,15 @@ position:relative;
 .Winner{
         position: relative;
         top: -20px;
-        font-family: 'Cabin Sketch', cursive;
+        font-family: 'Indie Flower', cursive;
         background-color:transparent;
         border-radius:26px;
         cursor:pointer;
-        color: #C0A982;
+        color: black;
         font-size:26px;
         font-weight:bold;
         padding:12px 11px;
         text-decoration:none;
-        text-shadow: 0 0 2px black;
         height: 50px;
 }
 .Winner:hover{
@@ -104,16 +103,15 @@ position:relative;
 .Loser{
     position: relative;
     top: -20px;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Indie Flower', cursive;
     background-color:transparent;
     border-radius:26px;
     cursor:pointer;
-    color: #C0A982;
+    color: black;
     font-size:26px;
     font-weight:bold;
     padding:12px 11px;
     text-decoration:none;
-    text-shadow: 0 0 2px black;
     height: 50px;
 }
 .Loser:hover{
