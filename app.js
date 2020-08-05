@@ -80,7 +80,6 @@ function playerSearch(e) {
             compPoints = compPoints + getComputerChoice().value
             let compScoreCard = $('#compScoreValue')
             compScoreCard.appendTo('#compScoreValue')
-            console.log(compPoints)
         })
 
     }
@@ -101,9 +100,7 @@ function getComputerChoice() {
 
 }
 
-function computerSearch(e) {
-    console.log(getComputerChoice(items))
-}
+
 
 function checkComputerScore() {
     if (round >= 8) {
@@ -123,14 +120,23 @@ function winningScreen() {
     $('#removeForEnd').empty()
     let winningTitle = $('<h1>')
     winningTitle.text("Congratulations, your Bower has ranked in first! You've won her attention with a most stunning and colorful bower, and beat your competitor with a final rating of " + points + "! Most don't even get this far so give yourself a wing on the back! So, whats the plan? Want to try again with another fair lady, or call it quits for the season?")
-    let tryAgain = $('<button>')
+    winningTitle.appendTo('#removeForEnd')
+    let tryAgain = $('<a>')
+    tryAgain.addClass("Winner")
     tryAgain.text("Try Again")
-    tryAgain.appendTo(winningTitle)
-    tryAgain.click(window.location = "Gameplay.html")
-    let givingUp = $('<button>')
+    tryAgain.appendTo($('#button-container'))
+    tryAgain.click(
+        () => { 
+            window.location = "Gameplay.html"
+        })
+    let givingUp = $('<a>')
+    givingUp.addClass("Loser")
     givingUp.text("I'll wait till next seson")
-    givingUp.appendTo(winningTitle)
-    tryAgain.click(window.location = "index.html")
+    givingUp.appendTo($('#button-container'))
+    givingUp.click(
+        () => {
+            window.location = "index.html"
+        })
 }
 
 function losingScreen() {
@@ -138,14 +144,23 @@ function losingScreen() {
     let losingTitle = $('<h1>')
     losingTitle.text("It would appear your competitors bower looked better than yours. But good news is, you can try with another lady if you'd like, or, if you're so heartbroken, you can wait until next season. What do ya say?")
     losingTitle.appendTo('#removeForEnd')
-    let tryAgain = $('<button>')
+    let tryAgain = $('<a>')
+    tryAgain.addClass("Winner")
     tryAgain.text("Try Again")
-    tryAgain.appendTo(losingTitle)
-    tryAgain.click(window.location = "Gameplay.html")
-    let givingUp = $('<button>')
+    tryAgain.appendTo($('#button-container'))
+    tryAgain.click(
+        () => { 
+            window.location = "Gameplay.html"
+        })
+    let givingUp = $('<a>')
+    givingUp.addClass("Loser")
     givingUp.text("I'll wait till next seson")
-    givingUp.appendTo(losingTitle)
-    tryAgain.click(window.location = "index.html")
+    givingUp.appendTo($('#button-container'))
+    givingUp.click(
+        () => {
+        window.location = "index.html"
+    })
+
 }
 
 

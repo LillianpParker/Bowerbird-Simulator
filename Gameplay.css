@@ -76,7 +76,35 @@ top:1px;
     top:1px;
 }
 
-#choices{
+#button-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+.Winner{
+        position: relative;
+        top: -20px;
+        font-family: 'Cabin Sketch', cursive;
+        background-color:transparent;
+        border-radius:26px;
+        cursor:pointer;
+        color: #C0A982;
+        font-size:26px;
+        font-weight:bold;
+        padding:12px 11px;
+        text-decoration:none;
+        text-shadow: 0 0 2px black;
+        height: 50px;
+}
+.Winner:hover{
+        background-color:#68b8d9;
+}
+.Winner:active{
+        position:relative;
+        top:1px;
+}
+
+.Loser{
     position: relative;
     top: -20px;
     font-family: 'Cabin Sketch', cursive;
@@ -91,10 +119,10 @@ top:1px;
     text-shadow: 0 0 2px black;
     height: 50px;
 }
-.choices:hover{
+.Loser:hover{
     background-color:#68b8d9;
 }
-.choices:active{
+.Loser:active{
     position:relative;
     top:1px;
 }
