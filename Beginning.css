@@ -16,7 +16,8 @@ p{
 
 /* Speech Bubble Animation Below */
  #Kami {
-    float: right;
+   position: absolute;
+    left: 825px;
     padding: 0px 0px 0px 0px;
     width: 600px;
     height: 400px;
@@ -77,9 +78,9 @@ p{
 }
 
 #One{
+  float: left;
   width: 50%;
   font-size: 50px;
-  left: 50%
 }
 
 /* I know I shouldn't use float, but I spent over two hours to get flexbox and other positioning methods to work until I gave up and finaly tried float. Same goes for the other time I used it. */
