@@ -39,24 +39,19 @@ h2{
 
 .Begin-Intro {
     font-family: 'Cabin Sketch', cursive;
-	box-shadow:inset 0px 0px 0px 0px #0029cc;
-	background:linear-gradient(to bottom, black 5%, #0029cc 100%);
-	background-color:#0029cc;
+	background-color:transparent;
 	border-radius:26px;
-	border:1px solid #0029cc;
 	cursor:pointer;
-	color:skyblue;
+	color: #C0A982;
 	font-size:26px;
 	font-weight:bold;
 	padding:12px 11px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #0029cc;
+	text-shadow: 0 0 2px black;
 	height: 50px;
-
 }
 .Begin-Intro:hover {
-	background:linear-gradient(to bottom, #0029cc 5%, black 100%);
-	background-color:#0029cc;
+	background-color:#68b8d9;
 }
 .Begin-Intro:active {
 	position:relative;
@@ -65,23 +60,19 @@ h2{
 
 .Bowerbird-Info {
     font-family: 'Cabin Sketch', cursive;
-	box-shadow:inset 0px 0px 0px 0px #0029cc;
-	background:linear-gradient(to bottom, black 5%, #0029cc 100%);
-	background-color:#0029cc;
+	background-color:transparent;
 	border-radius:26px;
-	border:1px solid #0029cc;
 	cursor:pointer;
-	color:skyblue;
+	color: #C0A982;
 	font-size:26px;
 	font-weight:bold;
 	padding:12px 11px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #0029cc;
+	text-shadow: 0 0 2px black;
 	height: 50px;
 }
 .Bowerbird-Info:hover {
-	background:linear-gradient(to bottom, #0029cc 5%, black 100%);
-	background-color:#0029cc;
+	background-color:#68b8d9;
 }
 .Bowerbird-Info:active {
 	position:relative;

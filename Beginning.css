@@ -122,24 +122,44 @@ p{
   justify-content: space-around;
 }
 
-.Begin-the-Bower{
-    background: #000000;
-    background: linear-gradient(#000000, #073763);
-    border-radius: 13px;
-    padding: 20px 20px;
-    color: #ffffff;
-    display: inline-block;
-    font: normal bold 30px/1 "Cabin Sketch", cursive;
-    text-align: center;
+.Begin-the-Bower {
+font-family: 'Cabin Sketch', cursive;
+background-color:transparent;
+border-radius:26px;
+cursor:pointer;
+color: #C0A982;
+font-size:26px;
+font-weight:bold;
+padding:12px 11px;
+text-decoration:none;
+text-shadow: 0 0 2px black;
+height: 50px;
+}
+.Begin-the-Bower:hover {
+background-color:#68b8d9;
+}
+.Begin-the-Bower:active {
+position:relative;
+top:1px;
 }
 
 .Exit{
-    background: #000000;
-    background: linear-gradient(#000000, #073763);
-    border-radius: 13px;
-    padding: 20px 20px;
-    color:#ffffff;
-    display: inline-block;
-    font: normal bold 30px/1 "Cabin Sketch", cursive;
-    text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+  background-color:transparent;
+  border-radius:26px;
+  cursor:pointer;
+  color: #C0A982;
+  font-size:26px;
+  font-weight:bold;
+  padding:12px 11px;
+  text-decoration:none;
+  text-shadow: 0 0 2px black;
+  height: 50px;
 }
+.Exit:hover{
+  background-color:#68b8d9;
+  }
+.Exit:active{
+  position:relative;
+  top:1px;
+  }

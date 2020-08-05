@@ -33,16 +33,71 @@ h2{
 #Search{
     position: relative;
     top: -50px; 
+    font-family: 'Cabin Sketch', cursive;
+    background-color:transparent;
+    border-radius:26px;
+    cursor:pointer;
+    color: #C0A982;
+    font-size:26px;
+    font-weight:bold;
+    padding:12px 11px;
+    text-decoration:none;
+    text-shadow: 0 0 2px black;
+    height: 50px;
 }
+.Search:hover{
+background-color:#68b8d9;
+}
+.Search:active{
+position:relative;
+top:1px;
+}
+
 #Check-Opponent{
     position: relative;
      top: 10px; 
+    font-family: 'Cabin Sketch', cursive;
+    background-color:transparent;
+    border-radius:26px;
+    cursor:pointer;
+    color: #C0A982;
+    font-size:26px;
+    font-weight:bold;
+    padding:12px 11px;
+    text-decoration:none;
+    text-shadow: 0 0 2px black;
+    height: 50px;
+}
+.Check-Opponent:hover{
+    background-color:#68b8d9;
+}
+.Check-Opponent:active{
+    position:relative;
+    top:1px;
 }
 
 #choices{
     position: relative;
     top: -20px;
-} 
+    font-family: 'Cabin Sketch', cursive;
+    background-color:transparent;
+    border-radius:26px;
+    cursor:pointer;
+    color: #C0A982;
+    font-size:26px;
+    font-weight:bold;
+    padding:12px 11px;
+    text-decoration:none;
+    text-shadow: 0 0 2px black;
+    height: 50px;
+}
+.choices:hover{
+    background-color:#68b8d9;
+}
+.choices:active{
+    position:relative;
+    top:1px;
+}
 
 #score{
     top: 500px;

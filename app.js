@@ -25,16 +25,16 @@ Kami.hover(
 // Item Array
 
 let items = [
-    { name: "Twig", value: 1},
-    { name: "Leaf", value: 2 },
-    { name: "Feather", value: 4},
-    { name: "Flower Petal", value: 5},
-    { name: "Colorful Leaf", value: 7},
-    { name: "Whole Flower", value: 10},
-    { name: "Coin", value: 14},
-    { name: "Colored Plastic Bottle Cap", value: 15},
-    { name: "Berries", value: 17},
-    { name: "Colored Straw", value: 20}
+    { name: "Twig", value: 1, color: "#a6885e"},
+    { name: "Leaf", value: 2, color: "#598F71" },
+    { name: "Feather", value: 4, color: "#D1D2DC"},
+    { name: "Flower Petal", value: 5, color: "#FFB6CI"},
+    { name: "Colorful Leaf", value: 7, color: "#8A3D36"},
+    { name: "Whole Flower", value: 10, color: "#DA70D6"},
+    { name: "Coin", value: 14, color: "#FFD700"},
+    { name: "Colored Plastic Bottle Cap", value: 15, color: "#00BFFF"},
+    { name: "Berries", value: 17, color:"#9B4466"},
+    { name: "Colored Straw", value: 20, color: "#7FFFD4"}
 ]
 
 // Player Below
@@ -68,6 +68,7 @@ function playerSearch(e) {
     for (let i = 0; i < choices.length; i++) {
         let buttonChoice = $('<button>')
         buttonChoice.text(choices[i].name)
+        buttonChoice.css('background-color', choices[i].color)
         buttonChoice.appendTo($('#choices'))
         buttonChoice.click(() => {
         $('#Search').show()
