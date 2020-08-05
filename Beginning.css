@@ -16,8 +16,6 @@ p{
  #Kami {
    position: absolute;
    left: 825px;
-    /* height: auto;
-    float: right; */
     padding: 0px 0px 0px 0px;
     width: 600px;
     height: 400px;
@@ -79,9 +77,9 @@ p{
 
 #One{
   flex-direction: row;
-  width: 700px;
+  width: 50%;
   font-size: 50px;
-  left: 50%;
+  float: left
 }
 
 /* I know I shouldn't use float, but I spent over two hours to get flexbox and other positioning methods to work until I gave up and finaly tried float. Same goes for the other time I used it. */
@@ -98,7 +96,7 @@ p{
 #Two{
   left: 50%;
   font-size: 30px;
-  width: 800px;
+  width: 50%;
 }
 
 #flex-container-2{
@@ -113,7 +111,7 @@ p{
 
 #Three{
   font-size: 30px;
-  width: 1000px;
+  width: 50%;
   right: 50%
 }
 
