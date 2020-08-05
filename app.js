@@ -1,8 +1,4 @@
 
-
-
-
-
 // Directions Screen Animations
 $(() => {
 
@@ -24,25 +20,6 @@ Kami.hover(
 );
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Item Array
@@ -80,21 +57,23 @@ let round = 1
 let totalRounds = 10
 
 function playerSearch(e) {
+    $('#Search').hide()
     round = round + 1
-    let roundNumber = $('<h1>')
+    let roundNumber = $('#round')
     roundNumber.text("Round: " + round)
-    roundNumber.appendTo('#scoreValue')
+    roundNumber.appendTo('#removeForEnd')
     let choices = playerSubset(items, 3)
     for (let i = 0; i < choices.length; i++) {
         let buttonChoice = $('<button>')
         buttonChoice.text(choices[i].name)
         buttonChoice.appendTo($('#choices'))
         buttonChoice.click(() => {
+        $('#Search').show()
             // Player Points
             points = points + choices[i].value
             let scoreCard = $('#scoreValue')
             scoreCard.appendTo('#scoreValue')
-            scoreCard.text(points)
+            scoreCard.text("Score: " + points)
             $('#choices').empty()
             // Computer Points
             compPoints = compPoints + getComputerChoice().value
@@ -102,7 +81,7 @@ function playerSearch(e) {
             compScoreCard.appendTo('#compScoreValue')
             console.log(compPoints)
         })
-
+    
     }
     if (points > compPoints && round >= totalRounds) {
         winningScreen()
@@ -125,6 +104,19 @@ function computerSearch(e) {
     console.log(getComputerChoice(items))
 }
 
+function checkComputerScore() {
+    if ( round >= 8){
+        alert("Sorry, too late for that pal!")
+        $('#Check-Opponent').hide()
+    }
+    else {
+        round = round + 2
+        let checkedScore = $('<h1>')
+        checkedScore.text("Your Rivals Bower Score is " + compPoints)
+        checkedScore.appendTo('#round')
+    }
+}
+
 function winningScreen() {
     $('#removeForEnd').empty()
     let winningTitle = $('<h1>')
@@ -137,13 +129,13 @@ function losingScreen() {
     $('#removeForEnd').empty()
     let losingTitle = $('<h1>')
     losingTitle.text("It would appear your competitors bower looked better than yours. But good news is, you can try with another lady if you'd like, or, if you're so heartbroken, you can wait until next season. What do ya say?")
-    losingTitle.appendTo('#removeForEnd')
-    let tryAgain = $('<button>')
-    tryAgain.text("Try Again")
-    tryAgain.appendTo(losingTitle)
-    let givingUp = $('<button>')
-    givingUp.text("I'll wait till next seson")
-    givingUp.appendTo(losingTitle)
+    // losingTitle.appendTo('#removeForEnd')
+    // let tryAgain = $('<button>')
+    // tryAgain.text("Try Again")
+    // tryAgain.appendTo(losingTitle)
+    // let givingUp = $('<button>')
+    // givingUp.text("I'll wait till next seson")
+    // givingUp.appendTo(losingTitle)
 }
 
 

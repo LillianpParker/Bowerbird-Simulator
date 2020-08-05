@@ -1,3 +1,57 @@
 body{
-    background-color: green;
+    background-color: skyblue;
+}
+
+h1{
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+#pic1{
+    width: 30%;
+    float: left;
+    padding: 0px;
+}
+
+#pic2{
+    width: 30%;
+    float: right;
+    padding: 0px;
+}
+
+#buttons{
+    text-align: center;
+}
+
+#Search{
+    position: relative;
+    top: -50px; 
+}
+#Check-Opponent{
+    position: relative;
+     top: 10px; 
+}
+
+#choices{
+    position: relative;
+    top: -20px;
+} 
+
+#score{
+    top: 500px;
+}
+
+#scoreValue{
+    top: 500px;
+}
+
+#round{
+    top: 500px;
 }

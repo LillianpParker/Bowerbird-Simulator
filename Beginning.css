@@ -1,22 +1,26 @@
 body{
-    background-color: slategray;
+    background-color: skyblue;
 }
 
 h1{
   font-family: 'Cabin Sketch', cursive;
+  font-size: 50px;
 }
 
 p{
   font-family: 'Indie Flower', cursive;
+  font-size: 30px;
 }
 
 /* Speech Bubble Animation Below */
  #Kami {
-   position: relative;
-    max-width: 40%;
-    height: auto;
-    left: 250px;
-    padding: 0px;
+   position: absolute;
+   left: 825px;
+    /* height: auto;
+    float: right; */
+    padding: 0px 0px 0px 0px;
+    width: 600px;
+    height: 400px;
 } 
 
  #Speech {
@@ -28,7 +32,7 @@ p{
     border-radius: 10px;
     width: 200px;
     padding: 10px;
-    left: 730px;
+    left: 760px;
     top: 20px;
     transform: scale(0);
     animation-fill-mode: forwards;
@@ -39,12 +43,12 @@ p{
     display: block;
     width: 0;
     position: absolute;
-    bottom: -25px;
-    left: 5px;
+    bottom: -15px;
+    left: 200px;
     border-style: solid;
     border-width: 15px;
     border-color: #5a5a5a transparent transparent #5a5a5a;
-    transform: rotate(10deg);
+    transform: rotate(-45deg);
   } 
   
  
@@ -75,22 +79,42 @@ p{
 
 #One{
   flex-direction: row;
-  font-size: 30px;
+  width: 700px;
+  font-size: 50px;
+}
+
+/* I know I shouldn't use float, but I spent over two hours to get flexbox and other positioning methods to work until I gave up and finaly tried float. Same goes for the other time I used it. */
+
+#female{
+  width: 400px;
+  height: 400px;
+  float: left;
+  padding-right: 100px; 
+  padding-left: 100px;
+  padding-top: 100px;
 }
 
 #Two{
-  position: relative;
-  left: 700px;
+  left: 900px; 
   font-size: 30px;
-  width: 700px;
+  width: 800px;
 }
 
+#flex-container-2{
+  display: flex;
+}
+
+#supplies{
+  float: right;
+  width: 400px;
+  height: 400px;
+}
 
 #Three{
-  position: relative;
-  left: 0px;
   font-size: 30px;
-  width: 700px;
+  padding-right: 200px; 
+  width: 1000px;
+  right: 200px;
 }
 
 #button-container{
@@ -98,7 +122,7 @@ p{
   justify-content: space-around;
 }
 
-  .Begin-the-Bower{
+.Begin-the-Bower{
     background: #000000;
     background: linear-gradient(#000000, #073763);
     border-radius: 13px;
